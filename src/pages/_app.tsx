@@ -1,6 +1,6 @@
 import type { AppProps } from "next/app";
 import Head from "next/head";
-import { GlobalStyle } from "../styles/globals";
+import { GlobalStyles } from "../styles/globals";
 
 function App({ Component, pageProps }: AppProps) {
   return (
@@ -11,7 +11,7 @@ function App({ Component, pageProps }: AppProps) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Component {...pageProps} />
-      <GlobalStyle />
+      <GlobalStyles />
     </>
   );
 }

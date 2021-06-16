@@ -1,6 +1,10 @@
 import { Wrapper, Title, Logo, Description, Illustration } from "./styles";
+import {} from "@storybook/react";
 
-export default function Main() {
+export default function Main({
+  title = "React avançado",
+  description = "TypeScript, ReactJS, NextJS, Styled-Components",
+}) {
   return (
     <Wrapper>
       <main>
@@ -8,10 +12,8 @@ export default function Main() {
           src="/logo.svg"
           alt="logo-Atomo e ao lado escrito react avançado"
         />
-        <Title>React avançado</Title>
-        <Description>
-          TypeScript, ReactJs, NextJs, Styled-Components
-        </Description>
+        <Title>{title}</Title>
+        <Description>{description}</Description>
         <Illustration
           src="/hero-illustration.svg"
           alt="figura de um desenvolvedor e uma tela com códigos"
