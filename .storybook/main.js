@@ -1,12 +1,7 @@
 module.exports = {
   stories: [
     "../src/components/**/stories.tsx",
-    "../src/components/**/stories.@(js|jsx|ts|tsx)",
+    // "../src/components/**/stories.@(js|jsx|ts|tsx)",
   ],
-  addons: [
-    "@storybook/addon-links",
-    "@storybook/addon-actions",
-    "@storybook/addon-essentials",
-    "@storybook/addon-knobs/register",
-  ],
+  addons: ["@storybook/addon-essentials"],
 };

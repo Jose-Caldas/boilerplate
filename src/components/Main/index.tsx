@@ -3,7 +3,7 @@ import {} from "@storybook/react";
 
 export default function Main({
   title = "React avançado",
-  description = "TypeScript, ReactJS, NextJS, Styled-Components",
+  description = "TypeScript, ReactJS, NextJS e Styled-Components",
 }) {
   return (
     <Wrapper>
